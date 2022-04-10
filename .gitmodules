@@ -1,0 +1,3 @@
+[submodule "xboxhdm23usb_linuxfiles"]
+	path = xboxhdm23usb_linuxfiles
+	url = https://github.com/parkerlreed/xboxhdm23usb_linuxfiles
