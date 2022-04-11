@@ -19,7 +19,7 @@ Troubleshooting
 
 - This tool will not attempt to unlock a drive if `eeprom.bin` is missing.
 - Ensure your user has `sudo` powers.
-- You must use a USB-to-SATA adapter, and it must implement SCSI to ATA Translation.
+- You must use a USB adapter, and it must implement SCSI to ATA Translation.
 - SCSI to ATA translation does NOT work properly with the `uas` driver.  You need to temporarily disable `uas` and use the `usb-storage` driver instead, for example by reloading it with `quirk=[VID]:[PID]:u`.
 
 ### "Error mounting disk!"
