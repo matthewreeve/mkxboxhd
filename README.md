@@ -25,3 +25,7 @@ Troubleshooting
 ### "Error mounting disk!"
 
 - If you are working with a real disk and not an image, you will need to make sure your user has permission to access it (for example: `sudo usermod -a -G disk user`) or run it as `root`.
+
+### I used this tool, and now my Xbox won't boot / still won't launch unauthorized software
+
+- Because I will not help you obtain copyrighted material, I cannot help you.
