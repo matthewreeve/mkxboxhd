@@ -8,8 +8,8 @@ Usage
 
 - Fetch dependencies with `git submodule init; git submodule update`
 - Build FUSE fatxfs in `fatx` (make sure you install all of the dependencies or it won't build FUSE support!)
-- Put your C and E files in the hdm/ folder, as you would with XBoxHDMaker.
-- If you need to unlock and re-lock the HDD, put your `eeprom.bin` in the root directory of this tool, as you would with XBoxHDMaker.
+- Put your C and E files in the `hdm/` folder, as you would with XboxHDMaker.
+- If you need to unlock and re-lock the HDD, put your `eeprom.bin` in the root directory of this tool, as you would with XboxHDMaker.
 - Making sure that the `fatxfs` binary in `fatx/build/fatxfs` is in your PATH, run `./mkxboxhd.sh [path to disk]`
 
 Troubleshooting
