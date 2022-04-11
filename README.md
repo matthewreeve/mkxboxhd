@@ -12,4 +12,16 @@ Usage
 - If you need to unlock and re-lock the HDD, put your `eeprom.bin` in the root directory of this tool, as you would with XBoxHDMaker.
 - Making sure that the `fatxfs` binary in `fatx/build/fatxfs` is in your PATH, run `./mkxboxhd.sh [path to disk]`
 
-If you need to lock/unlock the HDD, you will need to use a USB-to-SATA adapter that implements SCSI to ATA Translation and ensure that your user has `sudo` powers.  If you are working with real disks and not images, you will need to make sure your user has permission to access it (for example: `sudo usermod -a -G disk user`) or run it as `root`.
+Troubleshooting
+---------------
+
+### HDD won't unlock
+
+- This tool will not attempt to unlock a drive if `eeprom.bin` is missing.
+- Ensure your user has `sudo` powers.
+- You must use a USB-to-SATA adapter, and it must implement SCSI to ATA Translation.
+- SCSI to ATA translation does NOT work properly with the `uas` driver.  You need to temporarily disable `uas` and use the `usb-storage` driver instead, for example by reloading it with `quirk=[VID]:[PID]:u`.
+
+### "Error mounting disk!"
+
+- If you are working with a real disk and not an image, you will need to make sure your user has permission to access it (for example: `sudo usermod -a -G disk user`) or run it as `root`.
